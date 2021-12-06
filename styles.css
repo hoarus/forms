@@ -1,0 +1,147 @@
+*{
+  box-sizing: border-box;
+  font-family: "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #393A3D;
+}
+
+body{
+  background-color: #ECEEF1;;
+}
+
+h1, h2, h3, h4, h5, h6{
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav-container{
+  margin: 20px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+  gap: 10px;
+}
+
+.existing-account-container{
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 2px;
+}
+
+a{
+  color:#0077C5;;
+}
+
+button{
+  color: white;
+  background-color:#0077C5;
+  border: 1px solid #4c4c4c;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.sign-in{
+  width: 90px;
+}
+
+header{
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+h1{
+  font-size: 50px;
+}
+
+.subsites-navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.subsite{
+  font-size: 20px;
+}
+
+.main-container{
+  display: flex;
+  justify-content: center;
+}
+
+.create-account-container{
+  background-color: white;
+  border: solid 1px gray;
+  width: 400px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+h2, h4{
+  margin: 10px 0px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  flex: 1;
+}
+
+fieldset{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 20px 0px;
+  border: none;
+}
+
+input{
+  width: 100%;
+  height: 30px;
+}
+
+label{
+  font-weight: 500;
+}
+
+.fine-print{
+  font-size: 10px;
+}
+
+
+.recommended-input{
+  font-weight: 200;
+  color:rgb(126, 122, 122);
+}
+
+.create-account-button{
+  flex: 1;
+  width: 100%;
+  height: 50px;
+}
+
+.terms{
+  margin: 20px 0px;
+  font-style: italic;
+  font-size: 13px;
+  text-align: center;
+}
+
+footer{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.copyright-text{
+  width: 800px;
+}
+
+
+

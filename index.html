@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Forms Clone</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
   <nav>
@@ -16,31 +17,51 @@
       <button class="sign-in">Sign In</button>
     </div>
   </nav>
-  <header>intuit</header>
+  <header>
+    <h1>intuit</h1> 
+  </header>
   <nav class="subsites-navbar">
     <a class="subsite">mint</a>
     <a class="subsite">quickbooks</a>
     <a class="subsite">turbotax</a>
   </nav>
-  <section class="create-account-container">
-    <h2>Create an intuit account</h2> 
-    <h4>One account for everything Intuit, including Mint.</h4>
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email">
-    <label for="phone">
-      Phone
-      <span class="recommended-input">(recommended)</span>
-    </label>
-    <input type="tel" name="phone" id="phone">
-    <div>Standard call, message, or data rates may apply.</div>
-    <label for="password">Password</label>
-    <input type="password" name="password" id="password">
-    <button>Create account</button>
-    <div>By selecting Create account, you agree to our Terms and have read and acknowledge our Global Privacy Statement.</div>
+  <section class="main-container">
+    <section class="create-account-container">
+      <h2>Create an intuit account</h2> 
+      <h4>One account for everything Intuit, including Mint.</h4>
+      <form action="/login" method="post">
+        <fieldset id="fieldset-email">
+          <label for="email">Email</label>
+          <div class="text-input-container">
+            <input type="email" name="email" id="email">
+          </div>
+        </fieldset>
+        <fieldset id="fieldset-phone">
+          <label for="phone">
+            Phone
+            <span class="recommended-input">(recommended)</span>
+          </label>
+          <div class="text-input-container">
+            <input type="tel" name="phone" id="phone">
+          </div>
+          <div class="fine-print">Standard call, message, or data rates may apply.</div>
+        </fieldset>
+        <fieldset id="fieldset-password">
+          <label for="password">Password</label>
+          <div class="text-input-container">
+            <input type="password" name="password" id="password">
+          </div>
+        </fieldset>
+        <button class="create-account-button">Create account</button>
+      </form>
+      <div class="terms">By selecting Create account, you agree to our Terms and have read and acknowledge our Global Privacy Statement.</div>
+    </section>
   </section>
   
   <section></section>
-  <footer>© 2021 FalseName, Inc. All rights reserved. Abc, Def, Ghi, Jkl, Mno and Pqr are registered trademarks of FalseName Inc.
-    Terms and conditions, features, support, pricing, and service options subject to change without notice.</footer>
+  <footer>
+    <div class="copyright-text">© 2021 FalseName, Inc. All rights reserved. Abc, Def, Ghi, Jkl, Mno and Pqr are registered trademarks of FalseName Inc.
+    Terms and conditions, features, support, pricing, and service options subject to change without notice.</div>
+  </footer>
 </body>
 </html>
